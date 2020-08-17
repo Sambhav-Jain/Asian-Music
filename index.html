@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Asian Music</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fontawesome cdn -->
+	 <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	 <!-- favicon -->
+	<link rel = "icon" type= "image/png" href = "images/asian2.png">
+	<!-- common.css contains all the common classes used in all four pages to minimize the code -->
+	<link rel = "stylesheet" type = "text/css" href = "css/common.css">
+	<!-- for css of index.html which is the main page check index.css -->
+	<link rel = "stylesheet" type = "text/css" href = "css/index.css">
+</head>
+<body>
+
+	<!-- To provide background animation of popping and translating squares -->
+	<div class = "bgPulse">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<!-- Header of the page, for the css check common.css-->
+	<header>
+		<ul class = "horizontal-list">
+			<li id = "logo">
+				<a href = "#">
+					<img alt = "logo" src = "images/asian2.png">
+				</a>
+			</li>
+			<li class = "active head-text" id = "home"> 
+				<a class = "link" href = "index.html">Home</a> 
+			</li>
+			<li class = "head-text" id = "favourite"> 
+				<a class = "link" href = "favourite.html">Favourite</a> 
+			</li>
+			<li id = "signin">
+				<a class = "link head-text" href = "#login">Sign In</a>
+			</li>
+			<li id = "search-bar">	
+				<div class = "search tra">
+					<div id = "magnifier">
+						<i class = "fas fa-search"></i>
+					</div>
+					<input type= "text" name= "search" placeholder= "Search ...">
+					<div id = "microphone">
+						<i class = "fas fa-microphone"></i>
+					</div>
+				</div>
+			</li>
+			<li id = "notification">
+				<i id = "bell" class = "tra fas fa-bell"></i>
+			</li>
+			<li id = "dp">
+				<img alt = "Profile Pic" id = "pofile-pic" src = "images/dp.jpg">
+			</li>
+		</ul>
+	</header>
+
+	<div class = "container">
+		<main>
+			<div class = "scroll">
+				<section class = "flashcard">
+					<div class = "korean effect pics">
+						<img alt = "BTS - KPOP" src = "images/asian.jpg">
+						<div class = "text">
+							<p>Asian</p>
+						</div>
+					</div>
+					<div class = "hindi effect pics">
+						<img alt = "Deewani mastani song" src = "images/bollywood.png">
+						<div class = "text">
+							<p>Bollywood</p>
+						</div>
+					</div>
+					<div class = "japanese effect pics">
+						<img alt = "Your Lie in April" src = "images/anime.jpg">
+						<div class = "text">
+							<p>Anime</p>
+						</div>
+					</div>
+				</section>
+
+				<section class = "latest-release">
+					<h3>Latest Release</h3>
+					<div class = "box">
+						<div class = "item">
+							<div class = "song-img square tra">
+								<img alt = "Sword Art Online" src = "images/sao.jpg">
+								<a href = "#footer" class = "link play">
+									<i class = "fas fa-play"></i>
+								</a>
+							</div>
+							<div class = "song-name">
+								<p class = "up">Sword Art Online</p>
+								<p>Alicization</p>
+							</div>
+							<div class = "song-rating">
+								<input id = "toggle1" class = "hidden" type = "checkbox" >
+								<label for = "toggle1" class = "clicker"><i class = "fas fa-ellipsis-h"></i></label>
+								<div class = "hiddendiv">
+									<div class = "items">
+										<i class = "fas fa-play"></i>
+										<span>Play Now</span>
+									</div>
+								
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Queue</span>
+									</div>
+									
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Favourites</span>
+									</div>
+									
+									<div class = "items last-item">
+										<i class = "fas fa-info-circle"></i>
+										<span>Get Info</span>
+									</div>
+								</div>
+								<p>4.78</p>
+							</div> 
+						</div>
+						<div class = "item">
+							<div class = "song-img square tra">
+								<img alt = "Sword Art Online" src = "images/sao.jpg">
+								<a href = "#footer" class = "link play">
+									<i class = "fas fa-play"></i>
+								</a>
+							</div>
+							<div class = "song-name">
+								<p class = "up">Sword Art Online</p>
+								<p>Alicization</p>
+							</div>
+							<div class = "song-rating">
+								<input id = "toggle2" class = "hidden" type = "checkbox" >
+								<label for = "toggle2" class = "clicker"><i class = "fas fa-ellipsis-h"></i></label>
+								<div class = "hiddendiv">
+									<div class = "items">
+										<i class = "fas fa-play"></i>
+										<span>Play Now</span>
+									</div>
+								
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Queue</span>
+									</div>
+									
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Favourites</span>
+									</div>
+									
+									<div class = "items last-item">
+										<i class = "fas fa-info-circle"></i>
+										<span>Get Info</span>
+									</div>
+								</div>
+								<p>4.78</p>
+							</div> 
+						</div>
+						<div class = "item">
+							<div class = "song-img square tra">
+								<img alt = "Sword Art Online" src = "images/sao.jpg">
+								<a href = "#footer" class = "link play">
+									<i class = "fas fa-play"></i>
+								</a>
+							</div>
+							<div class = "song-name">
+								<p class = "up">Sword Art Online</p>
+								<p>Alicization</p>
+							</div>
+							<div class = "song-rating">
+								<input id = "toggle3" class = "hidden" type = "checkbox" >
+								<label for = "toggle3" class = "clicker"><i class = "fas fa-ellipsis-h"></i></label>
+								<div class = "hiddendiv">
+									<div class = "items">
+										<i class = "fas fa-play"></i>
+										<span>Play Now</span>
+									</div>
+								
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Queue</span>
+									</div>
+									
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Favourites</span>
+									</div>
+									
+									<div class = "items last-item">
+										<i class = "fas fa-info-circle"></i>
+										<span>Get Info</span>
+									</div>
+								</div>
+								<p>4.78</p>
+							</div> 
+						</div>
+						<div class = "item">
+							<div class = "song-img square tra">
+								<img alt = "Sword Art Online" src = "images/sao.jpg">
+								<a href = "#footer" class = "link play">
+									<i class = "fas fa-play"></i>
+								</a>
+							</div>
+							<div class = "song-name">
+								<p class = "up">Sword Art Online</p>
+								<p>Alicization</p>
+							</div>
+							<div class = "song-rating">
+								<input id = "toggle4" class = "hidden" type = "checkbox" >
+								<label for = "toggle4" class = "clicker"><i class = "fas fa-ellipsis-h"></i></label>
+								<div class = "hiddendiv">
+									<div class = "items">
+										<i class = "fas fa-play"></i>
+										<span>Play Now</span>
+									</div>
+								
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Queue</span>
+									</div>
+									
+									<div class = "items">
+										<i class = "fas fa-plus"></i>
+										<span>Add to Favourites</span>
+									</div>
+									
+									<div class = "items last-item">
+										<i class = "fas fa-info-circle"></i>
+										<span>Get Info</span>
+									</div>
+								</div>
+								<p>4.78</p>
+							</div> 
+						</div>
+					</div>
+				</section>
+				
+				<section id = "popular-artist">
+					<h2>Popular Artists</h2>
+					<div class = "popular">
+						<div class = "artist">
+							<div class = "circle">
+								<img alt = "Arjit Singh - Indian Singer" src = "images/Arjit.jpg">
+							</div>
+							<div class = "hov tra">
+								<i class = "fas fa-play"></i>
+							</div>
+							<p>Arjit Singh</p>
+						</div>
+						<div class = "artist">
+							<div class = "circle">
+								<img alt = "Jun Matsumoto - Japanese Singer" src = "images/Jun-Matsumoto.jpg">
+							</div>
+							<div class = "hov tra">
+								<i class = "fas fa-play"></i>
+							</div>
+							<p>Jun Matsumoto</p>
+						</div>
+						<div class = "artist">
+							<div class = "circle">
+								<img alt = "Shreya Ghoshal - Indian Singer" src = "images/Shreya.jpg">
+							</div>
+							<div class = "hov tra">
+								<i class = "fas fa-play"></i>
+							</div>
+							<p>Shreya Ghoshal</p>
+						</div>
+						<div class = "artist">
+							<div class = "circle">
+								<img alt = "Kyary Pamyu - Japanese Singer" src = "images/kyary-pamyu-pamyu.jpg">
+							</div>
+							<div class = "hov tra">
+								<i class = "fas fa-play"></i>
+							</div>
+							<p>Kyary Pamyu</p>
+						</div>			
+						<div class = "artist">
+							<div class = "circle">
+									<img alt = "Coldpaly - American Band" src = "images/Coldplay.jpg">
+							</div>
+							<a class = "link hov tra" href = "coldplay.html">
+								<i class = "fas fa-play"></i>
+							</a>
+							<p>ColdPlay</p>
+						</div>
+						<div class = "artist">
+							<div class = "circle">
+								<img alt = "Koda Kumi - Japanese Singer" src = "images/koda-kumi.jpg">
+							</div>
+							<div class = "hov tra">
+								<i class = "fas fa-play"></i>
+							</div>
+							<p>Koda Kumi</p>
+						</div>
+					</div>
+				</section>	
+
+				<section id = "station">
+					<div id = "outer">
+							<img alt = "Radio Fm" src = "images/radio.png">
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "KPOP" src = "images/kpop.jpg">
+						</div>
+						<div class = "hov1 tra">
+							K pop
+						</div>
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "Lovely Couple" src = "images/love.jpg">
+						</div>
+						<div class = "hov1 tra">
+							Love
+						</div>
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "Retro" src = "images/retro.jpg">
+						</div>
+						<div class = "hov1 tra">
+							Retro
+						</div>
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "Anime Girl" src = "images/theme-music.jpg">
+						</div>
+						<div class = "hov1 tra">
+							Theme Songs
+						</div>
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "Workout" src = "images/workout.jpg">
+						</div>
+						<div class = "hov1 tra">
+							Workout
+						</div>
+					</div>
+					<div class = "artist1">
+						<div class = "circle1">
+							<img alt = "Buddha" src = "images/spiritual.jpg">
+						</div>
+						<div class = "hov1 tra">
+							Spiritual
+						</div>
+					</div>
+				</section>
+
+				<section id = "flashbox">
+					<div class = "rectangle">
+						<img alt = "Party" class = "tra" src = "images/party.jpg">
+						<div class = "text">
+							<p>Party</p>
+						</div>
+					</div>
+
+					<div class = "rectangle">
+						<img alt = "EDM"  class = "tra" src = "images/electronic.jpg">
+						<div class = "text">
+							<p>Electronic</p>
+						</div>
+					</div>
+					<div class = "rectangle">
+						<img alt = "Road Trip"  class = "tra" src = "images/road-trip.jpg">
+						<div class = "text">
+							<p>Road Trip</p>
+						</div>
+					</div>
+				</section>
+
+				<section class = "latest hindi">
+					<h2>Latest Hindi</h2>
+					<div class = "wrap">
+						<div class = "square tra">
+							<img alt = "Ae Dil Hai Mushkil" src = "images/adhm.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "Ms Dhone title" src = "images/msd.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "Teri Mitti" src = "images/kesari.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "khariyat" src = "images/khariyat.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "raabta" src = "images/raabta.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "Fir bhi Tumko Chahunga" src = "images/halfgf.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</section>	
+
+				<section class = "latest last" style= "margin-top: 0;">
+					<h2>Latest English</h2>
+					<div class = "wrap">
+						<div class = "square tra">
+							<img alt = "Perfect" src = "images/perfect.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "Lose you to love me" src = "images/lose-you-to-love-me.png">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "I dont care" src = "images/i-dont-care.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "shape of you" src = "images/shape-of-you.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "sour candy" src = "images/sour-candy.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+						<div class = "square tra">
+							<img alt = "watermelon sugar" src = "images/watermelon-sugar.jpg">
+							<a href = "#footer" class = "link play">
+								<i class = "fas fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</section>	
+			</div>  
+				<!-- End of scroll class which helps to scroll main -->
+		</main>
+				<!-- end of main -->
+
+				<!-- Aside used for queue -->
+		<aside>
+			<div class = "scroll">
+				<section>
+					<div id = "heading">
+						<h3>Queue</h3>
+						<input id = "toggle5" class = "hidden" type = "checkbox">
+						<label for = "toggle5" class = "clicker"> Queue <i class="fas fa-caret-down"></i></label>
+						<div class = "hidq">
+							<div class = "items">
+								<span>Playlists</span>
+							</div>
+							<div class = "items last-item">
+								<span>Favourite song</span>
+							</div>
+						</div>
+					</div>
+					<ul class= "music-list last">
+						<li class = "music-bar">
+							<span class = "number">01</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">02</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">03</span>
+							<img alt = "Song-img" class = "bs-color3 img" src = "./images/birds.jpg">
+							<span class = "name1"> Birds<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">04</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">05</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">06</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">07</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">08</span>
+							<img alt = "Song-img" class = "bs-color3 img" src = "./images/birds.jpg">
+							<span class = "name1"> Birds<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">09</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">10</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">11</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">12</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">13</span>
+							<img alt = "Song-img" class = "bs-color3 img" src = "./images/birds.jpg">
+							<span class = "name1"> Birds<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">14</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">15</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">16</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">17</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">18</span>
+							<img alt = "Song-img" class = "bs-color3 img" src = "./images/birds.jpg">
+							<span class = "name1"> Birds<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">19</span>
+							<img alt = "Song-img" class = "bs-color1 img" src = "./images/orphans.jpg">
+							<span class = "name1"> Orphans<br><span class = "small-font">Flume</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+						<li class = "music-bar">
+							<span class = "number">20</span>
+							<img alt = "Song-img" class = "bs-color2 img" src = "./images/hypnotised.jpg">
+							<span class = "name1"> Hypnotised<br><span class = "small-font">Rosie lowe</span></span>
+							<span class = "heart"> <i class = "far fa-heart"></i> </span>
+						</li>
+					</ul>
+				</section>
+			</div>	
+			<!-- End of scroll class which helps to scroll queue(Aside section) -->
+		</aside>
+			<!-- End of aside -->
+
+	</div>
+	<!-- End of container class  a flex container which helped to makes main and aside flex-->
+
+	<!-- footer is used for maiking bar at bottom of page to play music -->
+		<div id = "footer" class = "p-music">
+			<div class = "beg"> 
+				<img alt = "Song-img" class = "bs-color2 " src = "./images/sao.jpg">
+				<span id = "s-name"> Sword Art Online </span>
+			</div>
+			<div>
+				<i class = "fas fa-step-backward"></i>
+				<i class = "far fa-pause-circle"></i>
+				<i class = "fas fa-step-forward"></i> 
+				<div class = "test1">
+					<div class = "test2">
+	
+					</div>
+				</div>
+			</div>
+			<div>
+				<i class = "fas fa-volume-up"></i>
+				<progress max= "100" value= "50">
+	
+				</progress>
+			</div>
+		</div>
+
+	<!-- Html code for SIGN IN option, for the css check common.css -->
+	<section id = "login">
+		
+		<div class = "phone">
+			<h2>Login/Sign Up</h2>
+			<p>Get a personalised experience, and access all your music</p>
+			<input type = "text" id = "fixed" value= "+91" disabled>&nbsp;
+			<input type = "text"  id = "pno" name = "number" placeholder= "Mobile number">
+			<button class = "otp" type = "submit" disabled> Send OTP</button>
+		</div>
+		<div class = "form">
+			<i class = "fas fa-user-circle fa-7x"></i>
+			<a id = "close" href = "#signin"><i class = "fas fa-times tra"></i></a>
+			<form class = "lbox">
+				<h2>Sign In</h2>
+				<div class = "inputBox"> 	
+					<input id = "username" type = "text" name = "username" required>
+					<label for= "username">Username</label>
+				</div>
+				<div class = "inputBox">
+					<input id = "password" type = "password" name = "password" required>
+					<label for = "password">Password</label>
+				</div>
+				<button type = "submit">Login</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- End of signin I've used lightbox animation to mimick how actual thing happens on real website -->
+</body>
+</html>
+
+<!-- I've divided CSS code into four files for purpose of reusability and to make code more readable. common.css is used by every page and each page has its own css, index.css for this one.-->

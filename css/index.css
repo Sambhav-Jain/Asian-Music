@@ -1,0 +1,592 @@
+body{position: relative;}
+/* -----------------X------------------------Main-Starts--------------------X--------------------------*/
+.container{
+	width: 100vw;
+	display: flex;
+}
+			/* To allow scrolling of sections as depicted in demo by hiding scroll bar  */
+.scroll{
+	width:100%;
+	padding: 20px;
+	height: inherit;
+	overflow-y: scroll;
+}
+main
+{ 
+	box-sizing: border-box;
+	display: block;
+	width: 70%;
+	height: 90vh;
+	overflow: hidden;
+	margin:0;
+}
+											/*top 3  categories*/
+.flashcard{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.flashcard:hover > .pics{
+	transform: scale(0.9);
+}
+.pics{
+	box-sizing: border-box;
+	position: relative;
+	height: 12em;
+	width: 33%;
+	border-radius: 5%;
+	padding:  0.2em;
+	transition: transform 500ms ease-in-out;
+	overflow: hidden;
+}
+.pics img{
+	height: 100%;
+	width: 100%;
+	border-radius: inherit;
+}
+
+.flashcard:hover > .effect:hover{
+	transform: scale(1.1);
+	border:0;
+}
+
+											/*Latest Release section*/
+
+.box{
+	width: 100%;
+	margin-right: 2%;
+	max-height: 40vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+.box > div{
+	box-sizing: border-box;
+	width: 45%;
+	height: 18vh;
+	/* z-index: -1; */
+}
+.item{
+	margin:0.5rem;
+	display: flex;
+	overflow: none;
+	color:rgba(255,255,255,0.7);
+	align-items:flex-end;
+	position: relative;
+}
+					/* To create the toggle effect without javascript*/
+.clicker {
+	background-color: var(--main-color);
+	outline: none;
+	cursor: pointer;
+	display:block;
+}	
+.hiddendiv {
+	display: none;
+	height: 10rem;
+	top:0;
+	position: absolute;
+	transform: translate(-50px,50px);
+	background-color: rgb(141, 65, 74);
+	z-index: 9999;
+}	
+.clicker:focus+.hiddendiv {
+	display: block;
+}
+				/* We are using check box which will not display on page */
+.hidden{
+	display: none;
+}
+					/* using label to check and uncheck the checkbox */
+input#toggle1:checked + label + .hiddendiv{
+	display:block;
+	width: 12rem;
+}
+input#toggle2:checked + label + .hiddendiv{
+	display:block;
+	width: 12rem;
+}
+input#toggle3:checked + label + .hiddendiv{
+	display:block;
+	width: 12rem;
+}
+input#toggle4:checked + label + .hiddendiv{
+	display:block;
+	width: 12rem;
+}
+						/*Items represent Indivual rows like add to favourite etc  */
+.items{
+    box-sizing: border-box;
+    border-bottom: 2px solid #f2f3f2;
+    margin: 0;
+    padding-left: 1rem;
+    height: 25%;
+	display: flex;
+	align-items: center;
+}
+.items:hover{
+	background-color: rgb(120, 58, 65);
+}
+.items i{
+	 width:10%;
+
+}
+.items span{
+	 width:90%;
+}
+.last-item{
+	border: 0;
+}
+								/* End of hidden div and toggle effect */
+.song-img{
+	width:30%;
+	height: inherit;
+}
+.song-img img{
+	height: inherit;
+	width: 100%;
+}
+.song-name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width:45%;
+	height: inherit;
+}
+.song-name > *{
+	width: 100%;
+}
+.song-rating{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	width:25%;
+	height: inherit;
+	letter-spacing: 2px;
+}
+.up{
+	color: var(--text-color);
+}
+											/*Popular Artists*/
+.popular{
+	margin-top: 5%;
+	display: flex;
+	height: 8.5rem;
+	width: 100%;
+}
+.artist{
+	flex:1 1 130px;
+	position: relative;
+	overflow: hidden;
+	font-size: 0.8rem;
+	margin-right: 2%;
+	text-align: center;
+	height: inherit;
+	width:	140px;
+}
+										/* Name of the Artist */
+.artist p{
+	width:100%;
+	text-align: left;
+	font-size: 1rem;
+}
+.circle{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin-bottom: 1%;
+}
+.circle > img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+			/* A black circle and play button that will appear when we hover over artist pic */
+.hov{
+	position: absolute;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  
+    background-color:#000;
+    color:var(--text-color);
+    font-size: 1.2rem;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transform: scale(0);
+}
+.artist:hover > .hov{
+	transform: scale(1);
+	opacity: 0.7;
+	cursor: pointer;
+	}
+											/*Stations*/
+#station{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 7rem;
+	background: #101642;
+	position: relative;
+}
+#station > *{
+	margin-left: 1%;
+	flex:1;
+	height: 80%;
+}									
+									/*Starting image of the radio */
+#outer{
+    width: 110px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+}
+#outer img{
+	display: block;
+	width: inherit;
+	height: inherit;
+}									
+/* image of the radio channels but as they are smaller than artist I had to rewrite the css */
+.artist1{
+	position: relative;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.circle1{
+	border-radius: 50%;
+	height: 90px;
+	width: 90px;
+}
+.circle1 > img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+.hov1{
+	position: absolute;
+	 display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;  
+    background-color:#000;
+    color:var(--text-color);
+    font-size: 1.2rem;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transform: scale(0);
+}
+.artist1:hover > .hov1{
+	transform: scale(1);
+	opacity: 0.7;
+	cursor: pointer;
+	}
+									/*FlashBoxes: Party, Electronic, Roadtrip*/
+#flashbox{
+	height: 9rem;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+.rectangle{
+	overflow: hidden;
+	width: 32%;
+	margin-right: 2%;
+	height: inherit;
+	position: relative;
+}
+.rectangle img{
+	height: inherit;
+	width: 100%;
+}
+.rectangle:hover img{
+	transform: scale(1.2);
+}
+								/* Test on all the three boxes*/
+.text{
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	height: inherit;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	color: var(--text-color);
+}
+.text p{
+	width: 100%;
+	text-align: center;
+}
+
+											/*Latest Bollywood*/
+.latest{
+	width: 100%;
+	height: 12rem;
+}
+.wrap{
+	display: flex;
+	width: 100%;
+	height: 80%;
+}
+.square{
+	flex:1;
+	position: relative;
+	height: inherit;
+	overflow: hidden;
+	margin-right: 0.5rem;
+}
+.square img{
+	width: 100%;
+	height: 100%;
+}
+.square:hover{
+	box-shadow: 0 0 0.5rem 0.3rem rgba(255,255,255,0.5);
+	transform: scale(1.05); 
+}
+										/* play button over the song*/
+.play{
+	font-size: 2rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	color: var(--text-color);
+	background: rgb(0,0,0,0.5);
+	transition: 500ms ease-in-out 100ms;
+}
+.square:hover .play{
+	position: absolute;
+	top: 0;	
+	height: 100%;
+	width: 100%;
+}
+.last{
+	margin-bottom: 20vh;
+}
+/*----------------------X---------------------main-Ends----------------X----------------------------------*/
+
+											/*Queue*/
+aside
+{
+	display: block;
+	width: 25%;
+	height: 90vh;
+	color:var(--text-color);
+	overflow: hidden;
+}
+.music-list{
+	padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#heading{
+    display: flex;
+	align-items: baseline;
+	position: relative;
+}
+#heading h3{
+    width: 70%;
+}
+#heading label, #heading i{
+	width: 30%;
+	padding-top: 5%; 
+	font-size: 0.9rem;
+	color:#000;
+	font-weight:bold;
+}
+			/* again the toggle effect as we did earlier in latest release section */
+.hidq {
+	display: none;
+	height: 4rem;
+	top:0;
+	left:50%;
+	position: absolute;
+	transform: translateY(50px);
+	background-color: rgb(141, 65, 74);
+	z-index: 9999;
+}	
+.clicker:focus+.hidq {
+	display: flex;
+}
+input#toggle5:checked + label + .hidq{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 10rem;
+}
+.hidq .items{
+	height: 50%;
+}
+										/* toggle ends */
+.music-list li{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.music-bar{
+    display: flex;
+    width: 100%;
+	align-items: center;
+}
+.music-bar > *{
+    margin-right:5%;
+}
+.name1{
+    width: 50%;
+}
+.img{
+    padding: 0;
+    width: 3rem;
+    height:2.2rem;
+    margin: 2%;
+}  
+.heart{
+	padding: 0;
+    font-size: 1.2rem;
+    width:10%;
+}
+											/* Footer mausic playing bar */
+#footer{
+	display: none;	
+}
+#footer:target{
+	display: flex;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+}
+.p-music{
+    background-color: #282828;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:#9d9d9d;
+}
+.beg img{
+    width: 3rem;
+    height:3rem;
+    margin: 1%;
+    margin-top: 0;
+}  
+#s-name{
+    font-family: sans-serif;
+    color: var(--text-color);
+    margin-left: 5%;
+    display: inline-block;
+}
+.p-music > *{
+    flex: 1;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	padding-top:5px;
+}
+.test1{
+    width: 100%;
+    background-color: #000;
+    height: 0.3rem;
+    border-radius: 50px;
+}
+.test2{
+    background-color: #29de74;
+    color: #29de74;
+    height: 0.3rem;
+    border-radius: 50px;
+    animation: trans 30000ms ease-in infinite;
+}
+								/* animation for music bar translating green part */
+@keyframes trans {
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}	
+
+/* @media(max-width: 700px){
+	main{
+		width: 100%;
+		margin-right: 5%;
+    }
+    aside{
+        display: none;
+    }
+    body *{
+        font-size: 0.8rem;
+    }
+} */
+
+/* For time being it is not responsive in nature you can try and uncomment it but only main screen will become 80% responsive but I checked other music sites they aren't responsive either */
+
+										/*Responsive design*/
+@media(max-width: 700px){
+	main{
+		box-sizing: border-box;
+		width: 100%;
+		padding-right: 3%;
+	}
+	header a{
+		font-size: 0.8rem;
+		letter-spacing: 0;
+	}
+	aside{
+        display: none;
+    }
+	.pics{
+		height:9em;
+	}
+	.popular{
+		height: 7em;
+	}
+	.popular p{
+		font-size: 0.7rem;
+		letter-spacing: 0;
+		font-family: arial,sans-serif,cursive;
+	}
+	#flashbox, .latest{
+		height:7rem; 
+	}
+	.song-rating{
+		font: 0.8rem sans-serif;
+	}
+	.search{
+		height: 1.5rem;
+	}
+	#magnifier,#microphone,aside{
+		display: none;
+	}
+	.search input{
+		width: 100%;
+	}
+	#station{
+		height: 5rem;
+		padding: 0;	
+	}
+}
+

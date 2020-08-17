@@ -1,0 +1,198 @@
+                    /* On this page we need to update the value of shadow variable*/
+:root{
+    --shadow:rgba(0,0,0,0.5);
+}
+                    /* Container for screen to divide it into two parts main and aside */
+.container{
+    display: flex;
+}
+                        /* Main section of page as header is common to all pages */
+main{
+    width: 65%;
+    margin-left: 3%;
+}
+                            /* Section for (artist) coldplay and its details */
+.card{
+    display: flex;
+    width: 100%;
+    background-color: var(--sub-color);
+    height: 17rem;
+}
+                                    /*(artist) coldplay image*/
+.figure{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.figure img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 3000ms ease-in-out;
+}
+.figure:hover img{
+    transform: scale(1.2);
+    opacity: 1;
+}
+                                /* Written part about (artist) coldplay */
+.details{
+    width: 69%;
+    padding: 2% 5%;
+}
+                                /* header and footer of detail section */
+#footer{
+    display: flex;
+}
+#header{
+    display: flex;
+}
+#header h3{
+    width: 80%;
+}
+#header span, #bio{
+    opacity: 0.7;
+    font-size: 0.8em;
+    margin-bottom: 5%;
+}
+                                        /* Play All Button*/
+.btn{
+    width: 30%;
+}
+#play{
+    color:var(--text-color);
+    padding: 3% 19%;
+    font-size: 1.2rem;
+    border: none;
+    background: linear-gradient(90deg,#4428b5,#b545db);
+}
+#play:hover{
+    box-shadow: 0 0 0.7rem 0.4rem var(--shadow);
+    cursor: pointer;
+}
+.btn span{
+    font-size: 0.7rem;
+}
+                            /* Song list of the (artist) coldplay*/
+.song-list{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}                               
+                            /*Collective css for individual Song row */
+.song-list div{
+    width: 100%;
+    height: 8vh;;
+    margin-bottom: 2%;
+    background-color: var(--sub-color); 
+    transition: 200ms ease-in-out;
+}
+.song-list div:hover{
+    background-color: var(--shadow);
+    transform: scaleY(1.2);
+}
+                                    /* Individual song row : song-bar*/
+.song-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.song-bar > *{
+    padding: 0 0 0 2%;
+    display: block;
+}
+                                    /* Elements which need  */
+#heading > span, .number{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    width:5%;
+}
+                        /* image,name and icons inside inside single bar*/
+.img{
+    padding: 0;
+    width: 3rem;
+    height:2.2rem;
+    margin: 1%;
+    margin-left: 0;
+}   
+.name{
+    letter-spacing: 2px;
+    width: 60%;
+}
+.heart{
+    text-align: right;
+    font-size: 1.2rem;
+    width:10%;
+}
+.add{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 10%;
+}
+                                        /* aside section of the page*/
+aside{
+    width: 25%;
+    margin-left: 2%;
+}
+.music-list{
+    height: 56vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+                                /* heading of section similar artist/s songs */
+.heading{
+    display: flex;
+    align-items: baseline;
+}
+.heading h3{
+    width: 80%;
+}
+.heading span{
+    width: 20%;
+}
+                                        /* Individual row of section */
+.music-list div{
+    width: 100%;
+    height: 8vh;;
+    margin-bottom: 2%;
+}
+.music-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.music-bar > *{
+    margin-right:5%;
+    display: block;
+}
+.name1{
+    font-size: arial,"Times New Roman",Sans-serif;
+    width: 50%;
+}
+
+                                  /* Responsive Design for the page*/
+@media(max-width: 1000px){
+    body *{
+        font-size: 1em;
+    }
+    header *{
+        font-size: 0.8rem;
+    }
+    .btn{
+        width: 50%;
+    }
+}
+@media(max-width: 700px){
+	main{
+		width: 100%;
+		margin: 5%;
+    }
+    aside{
+        display: none;
+    }
+    .card{
+        height: 16rem;
+    }
+}

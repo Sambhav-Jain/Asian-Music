@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Music</title>
+   <!-- fontawesome cdn -->
+	<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- favicon -->
+   <link rel = "icon" type= "image/png" href = "images/asian2.png">
+	<!-- common.css contains all the common classes used in all four pages to minimize the code -->
+	<link rel = "stylesheet" type = "text/css" href = "css/common.css">
+	<!-- Css file for this particular page -->
+    <link rel= "stylesheet" href = "css/coldplay.css">
+</head>
+<body>
+	<!-- To provide background animation of popping and translating squares -->
+	<div class = "bgPulse">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<!-- Header of the page, for the css check common.css-->
+	<header>
+		<ul class = "horizontal-list">
+			<li id = "logo">
+				<a href = "#">
+					<img alt = "logo" src= "images/asian2.png">
+				</a>
+			</li>
+			
+			<li class = "tra head-text" id = "home"> 
+				<a class = "link" href = "index.html">Home</a> 
+			</li>
+			<li class = "head-text" id = "favourite"> 
+				<a class = "link" href = "#">Favourite</a> 
+			</li>
+
+			<li id = "signin">
+				<a class = "link head-text" href = "#login">Sign In</a>
+			</li>
+
+			<li id = "search-bar">	
+				<div class = "search tra">
+					<div id = "magnifier">
+						<i class = "fas fa-search"></i>
+					</div>
+					<input type = "text" name = "search" placeholder = "Search ...">
+					<div id = "microphone">
+						<i class = "fas fa-microphone"></i>
+					</div>
+				</div>
+			</li>
+
+			<li id = "notification">
+				<i id = "bell" class = "tra fas fa-bell"></i>
+			</li>
+			
+			<li id = "dp">
+				<img alt = "profile pic" id = "pofile-pic" src = "images/dp.jpg">
+			</li>
+		</ul>
+	</header>
+    <div class= "container">
+        
+        <main>
+            <section class = "card">
+                <div class = "figure">
+                    <img src= "./images/Coldplay.jpg">
+                </div>
+                <div class = "details">
+                    <div id = "header">
+                        <h3>ColdPlay</h3>
+                        <span style= "padding-top: 5%;">35,264 Followers</span>
+                    </div>
+                    <div id = "bio">
+                        British Band
+                        <p>
+                            Coldplay is a British music band that has enjoyed continuous success since their inception in 1996 through their intelligent and soulful songs. The band members are Chris Martin (lead vocals), Jonny Buckland (lead guitar), Guy Berryman (bass guitar) and Will Champion (drums). 
+                        </p>
+                    </div>
+                    <div id = "footer">
+                        <div class = "btn">
+                            <button class = "tra" id= "play" type= "button">Play All</button><br>
+                            <span>247 Tracks | 128 Albums</span>
+                        </div>
+                        <div id = "follow">
+                            <span>Follow</span>
+                        </div>
+                </div>
+            </section>
+            <section class = "song-list">
+                <div class = "song-bar">
+                    <span class = "number">01</span>
+                    <img class = "bs-color1 img" src = "./images/orphans.jpg">
+                    <span class = "name"> Orphans <br><span class = "small-font">Flume</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+                <div class = "song-bar">
+                    <span class = "number">02</span>
+                    <img class = "bs-color2 img" src = "./images/hypnotised.jpg">
+                    <span class = "name"> Hypnotised  <br><span class = "small-font">Rosie lowe</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+                <div class = "song-bar">
+                    <span class = "number">03</span>
+                    <img class = "bs-color3 img" src = "./images/birds.jpg">
+                    <span class = "name"> Birds <br><span class = "small-font">Flume</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+                <div class = "song-bar">
+                    <span class = "number">04</span>
+                    <img class = "bs-color1 img" src = "./images/orphans.jpg">
+                    <span class = "name"> Orphans  <br><span class = "small-font">Rosie lowe</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+                <div class = "song-bar">
+                    <span class = "number">05</span>
+                    <img class = "bs-color2 img" src = "./images/hypnotised.jpg">
+                    <span class = "name"> Hypnotised <br><span class = "small-font">Flume</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+                <div class = "song-bar">
+                    <span class = "number">06</span>
+                    <img class = "bs-color3 img" src = "./images/birds.jpg">
+                    <span class = "name"> Birds <br><span class = "small-font">Rosie lowe</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                    <span class = "add"> <i class= "fas fa-plus"></i></span>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <section id = "similar-artist" class = "music-list">
+                <div class = "heading">
+                    <h3>Similar Artists</h3>
+                    <span style= "padding-top: 5%;"> View All </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">01</span>
+                    <img class = "bs-color1 img" src = "images/chainsmokers.jpg">
+                    <span class = "name1"> The ChainSmokers <br><span class = "small-font">Pop Brand </span></span>
+                    <span class = "number"><i class="fas fa-ellipsis-h"></i> <br> 4.44 </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">02</span>
+                    <img class = "bs-color1 img" src = "images/chainsmokers.jpg">
+                    <span class = "name1"> Imagine Dragons <br><span class = "small-font">Pop Brand </span></span>
+                    <span class = "number"><i class="fas fa-ellipsis-h"></i> <br> 4.44 </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">03</span>
+                    <img class = "bs-color1 img" src = "images/chainsmokers.jpg">
+                    <span class = "name1"> Imagine Dragons <br><span class = "small-font">Pop Brand </span></span>
+                    <span class = "number"><i class="fas fa-ellipsis-h"></i><br> 4.44 </span>
+                </div>
+            </section>
+            <section id = "recently-played" class = "music-list">
+                <div class = "heading">
+                    <h3>Recently Played</h3>
+                    <span style= "padding-top: 5%;"> View All </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">01</span>
+                    <img class = "bs-color1 img" src = "./images/orphans.jpg">
+                    <span class = "name1"> Orphans <br><span class = "small-font">Else</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">02</span>
+                    <img class = "bs-color2 img" src = "./images/hypnotised.jpg">
+                    <span class = "name1"> Hypnotised  <br><span class = "small-font">Rosie lowe</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">03</span>
+                    <img class = "bs-color3 img" src = "./images/birds.jpg">
+                    <span class = "name1"> Birds <br><span class = "small-font">Flume</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">04</span>
+                    <img class = "bs-color1 img" src = "./images/orphans.jpg">
+                    <span class = "name1"> Orphans <br><span class = "small-font">Rosie lowe</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                </div>
+                <div class = "music-bar">
+                    <span class = "number">05</span>
+                    <img class = "bs-color2 img" src = "./images/hypnotised.jpg">
+                    <span class = "name1"> Hypnotised <br><span class = "small-font">Flume</span></span>
+                    <span class = "heart"> <i class= "far fa-heart"></i> </span>
+                </div>
+            </section>
+        </aside>
+
+    </div>
+
+    <!-- Html code for SIGN IN option, for the css check common.css -->
+    <section id = "login">
+		
+		<div class = "phone">
+			<h2>Login/Sign Up</h2>
+			<p>Get a personalised experience, and access all your music</p>
+			<input type = "text" id = "fixed" value = "+91" disabled>&nbsp;
+			<input type = "text"  id = "pno" name = "number" placeholder = "Mobile number">
+			<button class = "otp" type = "submit" disabled> Send OTP</button>
+		</div>
+		<div class = "form">
+			<i class = "fas fa-user-circle fa-7x"></i>
+			<a id = "close" href = "#signin"><i class = "fas fa-times tra"></i></a>
+			<br>
+			<form class = "lbox">
+				<h2>Sign In</h2>
+				<div class = "inputBox"> 	
+					<input id = "username" type = "text" name = "username" required>
+					<label for = "username">Username</label>
+				</div>
+				<div class = "inputBox">
+					<input id = "password" type = "password" name = "password" required>
+					<label for = "password">Password</label>
+				</div>
+				<button type = "submit">Login</button>
+			</form>
+		</div>
+    </section>
+    <!-- End of signin I've used lightbox animation to mimick how actual thing happens on real website -->
+</body>
+</html>
+<!-- I've divided CSS code into four files for purpose of reusability and to make code more readable. common.css is used by every page and each page has its own css, coldplay.css for this one.-->
