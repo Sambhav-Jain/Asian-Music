@@ -1,5 +1,5 @@
 body{position: relative;}
-/* -----------------X------------------------Main-Starts--------------------X--------------------------*/
+						/* -----------------X------------------------Main-Starts--------------------X--------------------------*/
 .container{
 	width: 100vw;
 	display: flex;
@@ -74,7 +74,7 @@ main
 	align-items:flex-end;
 	position: relative;
 }
-					/* To create the toggle effect without javascript*/
+									/* To create the toggle effect without javascript*/
 .clicker {
 	background-color: var(--main-color);
 	outline: none;
@@ -114,7 +114,7 @@ input#toggle4:checked + label + .hiddendiv{
 	display:block;
 	width: 12rem;
 }
-						/*Items represent Indivual rows like add to favourite etc  */
+								/*Items represent Indivual rows like add to favourite etc  */
 .items{
     box-sizing: border-box;
     border-bottom: 2px solid #f2f3f2;
@@ -127,6 +127,9 @@ input#toggle4:checked + label + .hiddendiv{
 .items:hover{
 	background-color: rgb(120, 58, 65);
 }
+.items span:hover{
+	text-decoration:underline;
+}
 .items i{
 	 width:10%;
 
@@ -137,7 +140,7 @@ input#toggle4:checked + label + .hiddendiv{
 .last-item{
 	border: 0;
 }
-								/* End of hidden div and toggle effect */
+									/* End of hidden div and toggle effect */
 .song-img{
 	width:30%;
 	height: inherit;
@@ -186,7 +189,7 @@ input#toggle4:checked + label + .hiddendiv{
 	height: inherit;
 	width:	140px;
 }
-										/* Name of the Artist */
+											/* Name of the Artist */
 .artist p{
 	width:100%;
 	text-align: left;
@@ -203,7 +206,7 @@ input#toggle4:checked + label + .hiddendiv{
     width: 100%;
     border-radius: inherit;
 }
-			/* A black circle and play button that will appear when we hover over artist pic */
+							/* A black circle and play button that will appear when we hover over artist pic */
 .hov{
 	position: absolute;
 	display: flex;
@@ -241,7 +244,7 @@ input#toggle4:checked + label + .hiddendiv{
 	flex:1;
 	height: 80%;
 }									
-									/*Starting image of the radio */
+										/*Starting image of the radio */
 #outer{
     width: 110px;
 	height: 80px;
@@ -256,7 +259,7 @@ input#toggle4:checked + label + .hiddendiv{
 	width: inherit;
 	height: inherit;
 }									
-/* image of the radio channels but as they are smaller than artist I had to rewrite the css */
+							/* image of the radio channels but as they are smaller than artist I had to rewrite the css */
 .artist1{
 	position: relative;
 	font-size: 0.8rem;
@@ -294,7 +297,7 @@ input#toggle4:checked + label + .hiddendiv{
 	opacity: 0.7;
 	cursor: pointer;
 	}
-									/*FlashBoxes: Party, Electronic, Roadtrip*/
+										/*FlashBoxes: Party, Electronic, Roadtrip*/
 #flashbox{
 	height: 9rem;
 	width: 100%;
@@ -315,7 +318,7 @@ input#toggle4:checked + label + .hiddendiv{
 .rectangle:hover img{
 	transform: scale(1.2);
 }
-								/* Test on all the three boxes*/
+										/* Test on all the three boxes*/
 .text{
 	box-sizing: border-box;
 	position: absolute;
@@ -362,7 +365,7 @@ input#toggle4:checked + label + .hiddendiv{
 	box-shadow: 0 0 0.5rem 0.3rem rgba(255,255,255,0.5);
 	transform: scale(1.05); 
 }
-										/* play button over the song*/
+											/* play button over the song*/
 .play{
 	font-size: 2rem;
 	cursor: pointer;
@@ -385,9 +388,9 @@ input#toggle4:checked + label + .hiddendiv{
 .last{
 	margin-bottom: 20vh;
 }
-/*----------------------X---------------------main-Ends----------------X----------------------------------*/
+/*------------------------------------------------X--------------------------------------------main-Ends---------------------------------X-----------------------------------*/
 
-											/*Queue*/
+												/*Queue*/
 aside
 {
 	display: block;
@@ -417,7 +420,7 @@ aside
 	color:#000;
 	font-weight:bold;
 }
-			/* again the toggle effect as we did earlier in latest release section */
+							/* again the toggle effect as we did earlier in latest release section */
 .hidq {
 	display: none;
 	height: 4rem;
@@ -440,7 +443,7 @@ input#toggle5:checked + label + .hidq{
 .hidq .items{
 	height: 50%;
 }
-										/* toggle ends */
+											/* toggle ends */
 .music-list li{
     width: 100%;
     margin-bottom: 2%;
@@ -519,7 +522,7 @@ input#toggle5:checked + label + .hidq{
     border-radius: 50px;
     animation: trans 30000ms ease-in infinite;
 }
-								/* animation for music bar translating green part */
+										/* animation for music bar translating green part */
 @keyframes trans {
     0%{
         width:0;
